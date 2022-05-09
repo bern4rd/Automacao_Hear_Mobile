@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0 (Python 3.10.4 on linux)" generated="20220509 18:03:58.215" rpa="false" schemaversion="3">
+<suite id="s1" name="testeHear" source="/home/bernard/Documentos/Cursos/Curso_robot/HEAR/Tests/testeHear.robot">
+<test id="s1-t1" name="Abrir app Hear" line="7">
+<kw name="Dado que eu abro o app Hear" library="resources">
+<kw name="Open Application" library="AppiumLibrary">
+<arg>http://localhost:4723/wd/hub</arg>
+<arg>platformName=android</arg>
+<arg>deviceName=RQ8R701J5XF</arg>
+<arg>appPackage=com.example.hear</arg>
+<arg>appActivity=com.example.hear.MainActivity</arg>
+<arg>automationName=Uiautomator2</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |</doc>
+<status status="PASS" starttime="20220509 18:03:58.315" endtime="20220509 18:04:05.435"/>
+</kw>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20220509 18:04:05.831" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="appium-screenshot-1.png"&gt;&lt;img src="appium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20220509 18:04:05.436" endtime="20220509 18:04:05.831"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220509 18:04:10.831" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20220509 18:04:05.831" endtime="20220509 18:04:10.831"/>
+</kw>
+<status status="PASS" starttime="20220509 18:03:58.315" endtime="20220509 18:04:10.832"/>
+</kw>
+<kw name="Quando eu preencho os campos do usuário" library="resources">
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${email-locator}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20220509 18:04:10.833" level="INFO">Clicking element '//android.widget.EditText[1]'.</msg>
+<status status="PASS" starttime="20220509 18:04:10.832" endtime="20220509 18:04:10.956"/>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<arg>${email-locator}</arg>
+<arg>${User-email}</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<msg timestamp="20220509 18:04:10.958" level="INFO">Typing text 'felipebernard.pe@gmail.com' into text field '//android.widget.EditText[1]'</msg>
+<status status="PASS" starttime="20220509 18:04:10.956" endtime="20220509 18:04:12.012"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${pass-locator}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20220509 18:04:12.013" level="INFO">Clicking element '//android.widget.EditText[2]'.</msg>
+<status status="PASS" starttime="20220509 18:04:12.012" endtime="20220509 18:04:12.590"/>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<arg>${pass-locator}</arg>
+<arg>${User-pass}</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<msg timestamp="20220509 18:04:12.591" level="INFO">Typing text 'Abc.1234' into text field '//android.widget.EditText[2]'</msg>
+<status status="PASS" starttime="20220509 18:04:12.590" endtime="20220509 18:04:13.457"/>
+</kw>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20220509 18:04:13.870" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="appium-screenshot-2.png"&gt;&lt;img src="appium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20220509 18:04:13.457" endtime="20220509 18:04:13.870"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220509 18:04:18.870" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20220509 18:04:13.870" endtime="20220509 18:04:18.870"/>
+</kw>
+<status status="PASS" starttime="20220509 18:04:10.832" endtime="20220509 18:04:18.870"/>
+</kw>
+<kw name="E clico em entrar" library="resources">
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${entrar-botao}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20220509 18:04:18.872" level="INFO">Clicking element '//android.widget.Button[@content-desc="ENTRAR"]'.</msg>
+<status status="PASS" starttime="20220509 18:04:18.871" endtime="20220509 18:04:19.698"/>
+</kw>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20220509 18:04:20.099" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="appium-screenshot-3.png"&gt;&lt;img src="appium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20220509 18:04:19.698" endtime="20220509 18:04:20.099"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220509 18:04:25.100" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20220509 18:04:20.099" endtime="20220509 18:04:25.100"/>
+</kw>
+<status status="PASS" starttime="20220509 18:04:18.871" endtime="20220509 18:04:25.100"/>
+</kw>
+<status status="PASS" starttime="20220509 18:03:58.314" endtime="20220509 18:04:25.100"/>
+</test>
+<status status="PASS" starttime="20220509 18:03:58.215" endtime="20220509 18:04:25.101"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="testeHear">testeHear</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
