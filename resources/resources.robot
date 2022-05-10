@@ -17,7 +17,7 @@ ${User-pass}           Abc.1234
 *** Keywords ***
 Dado que eu abro o app Hear
     ##AppiumLibrary.Set Appium Timeout                  10
-    Open Application      http://localhost:4723/wd/hub      
+    Open Application                    http://localhost:4723/wd/hub      
     ...                                 platformName=android     
     ...                                 deviceName=RQ8R701J5XF         
     ...                                 appPackage=com.example.hear        
@@ -26,7 +26,7 @@ Dado que eu abro o app Hear
     Capture Page Screenshot            
     Sleep               5
 
-Quando eu preencho os campos do usuário
+Quando eu preencho corretamente os campos do usuário
     Element Should Be Visible                               ${email-locator}
     Element Should Be Visible                               ${pass-locator}
     Click Element                   ${email-locator}
