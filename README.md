@@ -61,18 +61,11 @@ source ~/.bashrc
 npm install -g appium
 npm install -g appium-doctor
 ```
-
 - Em seguida, execute:
 
 ```bash
 appium-doctor --android
 ```
-
-- Deve aprensentar um resultado similar ao da imagem abaixo:
-
-<h1 align="left">
-    <img alt="QAninja Academy" src=".github/doctor.png" width="100%" />
-</h1>
 
 ## 📱Appium Desktop
 
