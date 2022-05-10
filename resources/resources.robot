@@ -27,17 +27,17 @@ Dado que eu abro o app Hear
     Sleep               5
 
 Quando eu preencho os campos do usuário
-    Element Should Be Visible                   ${email-locator}
-    Element Should Be Visible                   ${pass-locator}
-    Click Element       ${email-locator}
-    Input Text          ${email-locator}        ${User-email}   
-    Click Element       ${pass-locator}
-    Input Text          ${pass-locator}         ${User-pass}
+    Element Should Be Visible                               ${email-locator}
+    Element Should Be Visible                               ${pass-locator}
+    Click Element                   ${email-locator}
+    Input Text                      ${email-locator}        ${User-email}   
+    Click Element                   ${pass-locator}
+    Input Text                      ${pass-locator}         ${User-pass}
     Capture Page Screenshot            
     Sleep               5
 
 E clico em entrar
-    Element Should Be Visible                   ${entrar-botao}
-    Click Element       ${entrar-botao}
+    Element Should Be Visible                               ${entrar-botao}
+    Click Element                   ${entrar-botao}
     Capture Page Screenshot  
     Sleep               5
