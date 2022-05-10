@@ -48,7 +48,7 @@ source ~/.bashrc
 
 ### No Windows
 
-[![Audi R8](.github/windows.png)](https://youtu.be/ZsOq4xoTid0 "Variáveis de ambiente no Windows")
+https://youtu.be/ZsOq4xoTid0 "Variáveis de ambiente no Windows")
 
 
 ## 📱Appium 
