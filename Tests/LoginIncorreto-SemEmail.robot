@@ -3,7 +3,7 @@ Library     AppiumLibrary
 Resource    ../resources/resources.robot
 
 Test Setup       Open Session
-Test Teardown    Close Session
+Test Teardown    Close Session    LoginIncorreto-SemEmail
 
 *** Test Cases ***
 #Este test case foi implementado no arquivo resources.robot

@@ -41,8 +41,9 @@ Open Session
     Start Screen Recording
 
 Close Session
+    [Arguments]                    ${gravação}
     Sleep                          3
-    Stop Screen Recording          
+    Stop Screen Recording          ${gravação}
     Close Application
 
 Dado que eu esteja na pagina inicial do App Hear
@@ -55,26 +56,22 @@ Quando eu preencho corretamente os campos do usuário
     Input Text                                              ${email-locator}    ${User-email}   
     Click Element                                           ${pass-locator}
     Input Text                                              ${pass-locator}     ${User-pass}
-    Capture Page Screenshot
 
 Quando eu preencho corretamente os campos do usuário sem o email
     Wait Until Page Contains Element                        ${email-locator}    10
     Wait Until Page Contains Element                        ${pass-locator}     10
     Click Element                                           ${pass-locator}
     Input Text                                              ${pass-locator}    ${User-pass}   
-    Capture Page Screenshot       
 
 Quando eu preencho corretamente os campos do usuário sem a senha
     Wait Until Page Contains Element                        ${email-locator}    10
     Wait Until Page Contains Element                        ${pass-locator}     10
     Click Element                                           ${email-locator}
     Input Text                                              ${email-locator}    ${User-email}   
-    Capture Page Screenshot            
           
 E clico em entrar
     Element Should Be Visible                               ${login-button}    3
     Click Element                                           ${login-button}
-    Capture Page Screenshot  
 
 Quando eu cliclo em Cadastrar
     Element Should Be Visible                               ${register-button}    3
