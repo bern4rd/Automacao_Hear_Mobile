@@ -9,5 +9,5 @@ Test Teardown    Close Session
 #Este test case foi implementado no arquivo resources.robot
 Abrir app Hear
     Dado que eu esteja na pagina inicial do App Hear
-    Quando eu preencho corretamente os campos do usuário sem a senha
+    Quando eu preencho corretamente os campos do usuário sem o email
     Então o botão de login deve estar desabilitado

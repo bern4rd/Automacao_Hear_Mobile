@@ -57,17 +57,19 @@ Quando eu preencho corretamente os campos do usuário
     Input Text                                              ${pass-locator}     ${User-pass}
     Capture Page Screenshot
 
+Quando eu preencho corretamente os campos do usuário sem o email
+    Wait Until Page Contains Element                        ${email-locator}    10
+    Wait Until Page Contains Element                        ${pass-locator}     10
+    Click Element                                           ${pass-locator}
+    Input Text                                              ${pass-locator}    ${User-pass}   
+    Capture Page Screenshot       
+
 Quando eu preencho corretamente os campos do usuário sem a senha
     Wait Until Page Contains Element                        ${email-locator}    10
     Wait Until Page Contains Element                        ${pass-locator}     10
     Click Element                                           ${email-locator}
     Input Text                                              ${email-locator}    ${User-email}   
     Capture Page Screenshot            
-
-Então o botão de login deve estar desabilitado
-    Hide Keyboard
-    Page Should Contain Element                             ${login-button}
-    Element Should Be Disabled                              ${login-button}
           
 E clico em entrar
     Element Should Be Visible                               ${login-button}    3
@@ -150,6 +152,11 @@ Então o botão de cadastrar deve estar desabilitado
     Hide Keyboard
     Page Should Contain Element                             ${register-page-button}
     Element Should Be Disabled                              ${register-page-button}
+
+Então o botão de login deve estar desabilitado
+    Hide Keyboard
+    Page Should Contain Element                             ${login-button}
+    Element Should Be Disabled                              ${login-button}
 
 #E cliclo em CADASTRAR        //Só será possível após a integração com o backend
 #   ...
