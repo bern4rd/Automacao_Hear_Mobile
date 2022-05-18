@@ -11,10 +11,10 @@ ${pass-locator}                        //android.widget.EditText[2]
 ${login-button}                        //android.widget.Button[@content-desc="ENTRAR"]  
 
 #Inputs de login
-${User-email}                          felipebernard.pe@gmail.com
+${User-email}                          teste@gmail.com
 ${User-pass}                           Abc.1234
-${User-phone}                          81984025821
-${User-name}                           Felipe Bernard de Oliveira Soares Diniz
+${User-phone}                          99988887777
+${User-name}                           Pessoa de sobrenome da Silva
 
 
 #Register page
