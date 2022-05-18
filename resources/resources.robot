@@ -31,7 +31,7 @@ ${pass-confirmation-register-locator}    //android.widget.EditText[5]
 
 *** Keywords ***
 Open Session
-    Set Appium Timeout                  10
+    Set Appium Timeout                  5
     Open Application                    http://localhost:4723/wd/hub      
     ...                                 platformName=android     
     ...                                 deviceName=RQ8R701J5XF         
@@ -47,25 +47,25 @@ Close Session
     Close Application
 
 Dado que eu esteja na pagina inicial do App Hear
-    Wait Until Page Contains       ENTRAR    10
+    Wait Until Page Contains       ENTRAR    5
 
 Quando eu preencho corretamente os campos do usuário
-    Wait Until Page Contains Element                        ${email-locator}    10
-    Wait Until Page Contains Element                        ${pass-locator}     10
+    Wait Until Page Contains Element                        ${email-locator}    5
+    Wait Until Page Contains Element                        ${pass-locator}     5
     Click Element                                           ${email-locator}
     Input Text                                              ${email-locator}    ${User-email}   
     Click Element                                           ${pass-locator}
     Input Text                                              ${pass-locator}     ${User-pass}
 
 Quando eu preencho corretamente os campos do usuário sem o email
-    Wait Until Page Contains Element                        ${email-locator}    10
-    Wait Until Page Contains Element                        ${pass-locator}     10
+    Wait Until Page Contains Element                        ${email-locator}    5
+    Wait Until Page Contains Element                        ${pass-locator}     5
     Click Element                                           ${pass-locator}
     Input Text                                              ${pass-locator}    ${User-pass}   
 
 Quando eu preencho corretamente os campos do usuário sem a senha
-    Wait Until Page Contains Element                        ${email-locator}    10
-    Wait Until Page Contains Element                        ${pass-locator}     10
+    Wait Until Page Contains Element                        ${email-locator}    5
+    Wait Until Page Contains Element                        ${pass-locator}     5
     Click Element                                           ${email-locator}
     Input Text                                              ${email-locator}    ${User-email}   
           
@@ -78,7 +78,7 @@ Quando eu cliclo em Cadastrar
     Click Element                                           ${register-button}    
 
 E os campos de cadastro estão visiveis
-    Element Should Be Visible                               ${register-page}                         10
+    Element Should Be Visible                               ${register-page}                         5
     Element Should Be Visible                               ${name-register-locator}                 3
     Element Should Be Visible                               ${email-register-locator}                3
     Element Should Be Visible                               ${phone-register-locator}                3
