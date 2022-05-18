@@ -18,4 +18,3 @@ Cadastro incorreto de usuario
     E os campos de cadastro estão visiveis
     E preencho as informações de cadastro sem telefone
     Então o botão de cadastrar deve estar desabilitado
-    #E cliclo em CADASTRAR        //Só será possível após a integração com o backend
