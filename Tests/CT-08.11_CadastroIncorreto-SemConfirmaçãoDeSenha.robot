@@ -3,7 +3,7 @@ Library     AppiumLibrary
 Resource    ../resources/resources.robot
 
 Test Setup       Open Session
-Test Teardown    Close Session    CadastroIncorreto-SemConfirmaçãoDeSenha
+Test Teardown    Close Session    CT-08.11_CadastroIncorreto-SemConfirmaçãoDeSenha
 
 *** Test Cases ***
 #Este test case foi implementado no arquivo resources.robot

@@ -3,7 +3,7 @@ Library     AppiumLibrary
 Resource    ../resources/resources.robot
 
 Test Setup       Open Session
-Test Teardown    Close Session    CadastrarUsuarioComSucesso
+Test Teardown    Close Session    CT-08.1_CadastrarUsuarioComSucesso
 
 
 *** Test Cases ***

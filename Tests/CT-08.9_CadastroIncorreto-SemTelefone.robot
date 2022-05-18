@@ -3,7 +3,7 @@ Library     AppiumLibrary
 Resource    ../resources/resources.robot
 
 Test Setup       Open Session
-Test Teardown    Close Session    CadastroIncorreto-SemTelefone
+Test Teardown    Close Session    CT-08.9_CadastroIncorreto-SemTelefone
 
 *** Test Cases ***
 #Este test case foi implementado no arquivo resources.robot

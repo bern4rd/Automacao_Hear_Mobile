@@ -3,7 +3,7 @@ Library     AppiumLibrary
 Resource    ../resources/resources.robot
 
 Test Setup       Open Session
-Test Teardown    Close Session    LoginIncorreto-SemEmail
+Test Teardown    Close Session    CT-14.6_LoginIncorreto-SemEmail
 
 *** Test Cases ***
 #Este test case foi implementado no arquivo resources.robot
