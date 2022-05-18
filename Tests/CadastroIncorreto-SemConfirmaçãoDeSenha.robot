@@ -7,6 +7,11 @@ Test Teardown    Close Session
 
 *** Test Cases ***
 #Este test case foi implementado no arquivo resources.robot
+
+############################################################
+#                    Hyan Batista                          #
+############################################################
+
 Cadastro incorreto de usuario 
     Dado que eu esteja na pagina inicial do App Hear
     Quando eu cliclo em Cadastrar

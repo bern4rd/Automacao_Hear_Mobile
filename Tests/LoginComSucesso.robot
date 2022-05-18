@@ -7,6 +7,11 @@ Test Teardown    Close Session
 
 *** Test Cases ***
 #Este test case foi implementado no arquivo resources.robot
+
+############################################################
+#                    Felipe Bernard                        #
+############################################################
+
 Abrir app Hear
     Dado que eu esteja na pagina inicial do App Hear
     Quando eu preencho corretamente os campos do usuário
