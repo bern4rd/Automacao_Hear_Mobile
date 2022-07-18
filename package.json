@@ -1,0 +1,24 @@
+{
+  "name": "automacao_hear_mobile",
+  "version": "1.0.0",
+  "description": "Projeto de automação de testes no App da Hear / Disciplina de  testes de sw com a Profª Ana Paula / DC / UFRPE",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bern4rd/Automacao_Hear_Mobile.git"
+  },
+  "keywords": [],
+  "author": "Felipe <felipebernard.pe@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bern4rd/Automacao_Hear_Mobile/issues"
+  },
+  "homepage": "https://github.com/bern4rd/Automacao_Hear_Mobile#readme",
+  "dependencies": {
+    "appium": "^1.22.3",
+    "appium-doctor": "^1.16.0"
+  }
+}
